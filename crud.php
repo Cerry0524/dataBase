@@ -13,10 +13,32 @@ td{
     border: 1px solid lightblue;
     padding: 5px 8px;
 }
+a.btn{
+    border: 1px solid lightblue;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    display: inline-block;
+    box-shadow: 0px 0px 6px green;
+    background: linear-gradient(45deg, red, transparent,purple);
+    font-family: "標楷體";
+    /* transition: all 0.5s; */
+    top:0px;
+    right:0px;
+}
+
+a.btn:hover{
+    transform: scale(1.2);
+    filter: brightness(1.5);
+    position:relative ;
+    /* transition: all 0.5s; */
+    top:-5px;
+    right:-10px;
+}
 </style>
 
 <h1>學生列表</h1>
-
+<a href="insert_form.php" class='btn' >新增學生資料</a>
 <table>
     <tr>
         <td>序號</td>
