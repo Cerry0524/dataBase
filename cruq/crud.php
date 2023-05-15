@@ -56,7 +56,7 @@ a.btn:hover{
         <td>刪除</td>
     </tr>
 <?php 
-    $sql="select * from students ";
+    $sql="select * from students order by id desc ";
     $rows=$pdo->query($sql)->fetchAll(pdo::FETCH_ASSOC);
     foreach($rows as $row){
 ?>
@@ -72,7 +72,7 @@ a.btn:hover{
         <td><?=$row['telphone'];?></td>
         <td><?=$row['major'];?></td>
         <td><?=$row['secondary'];?></td>
-        <td>編輯</td>
+        <td><a href='edit_form.php?id=<?=$row['id'];?>'>編輯</a></td>
         <td><a href='del.php?id=<?=$row['id'];?>'>刪除</a></td>
     </tr>
     <?php
