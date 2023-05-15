@@ -2,6 +2,7 @@
 $dsn="mysql:host=localhost;charset=utf8;dbname=student";
 $pdo=new PDO($dsn,'root','');
 
+
 $edit="update students set 
         `uni_id`='{$_POST['uni_id']}',
         `seat_num`='{$_POST['seat_num']}',
